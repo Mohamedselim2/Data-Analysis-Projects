@@ -1,45 +1,57 @@
-## Project Overview: Scotland Cancer Mortality and Population Analysis (1994-2019)
+### README
 
-### Description
-This project involves a comprehensive analysis of cancer mortality data in Scotland from 1994 to 2019. The dataset includes information on the number of deaths by various cancer types over this period. Additionally, a separate dataset detailing the population of Scotland during the same period was used to provide context and support in-depth analysis.
+#### Project Title: Scotland Cancer Mortality and Population Analysis (1994-2019)
 
-### Objectives
-- **Data Analysis**: Perform a thorough examination of cancer mortality trends over 25 years.
-- **Visualization**: Create visual representations to highlight key insights and trends in cancer mortality.
-- **Modeling**: Develop statistical models to understand the factors influencing cancer mortality and predict future trends.
-- **Exploration**: Investigate correlations between population changes and cancer mortality rates.
+#### Description:
+This project involves comprehensive data analysis, visualization, and modeling of cancer mortality rates in Scotland from 1994 to 2019. Additionally, it includes an analysis of the population data for Scotland over the same period. The project aims to provide insights into the trends and patterns of cancer mortality and how they relate to population changes.
 
-### Datasets
-1. **Cancer Mortality Dataset**: Contains the number of deaths by cancer type from 1994 to 2019. Each entry includes:
-   - Year
-   - Cancer type
-   - Number of deaths
+#### Data Sets:
+1. **Scotland Cancer Mortality (1994-2019)**
+   - Contains detailed records of cancer-related deaths across various types of cancers.
+   - Data includes year-wise death counts, categorized by cancer type.
 
-2. **Population Dataset**: Provides the population of Scotland for each year from 1994 to 2019. Each entry includes:
-   - Year
-   - Total population
+2. **Scotland Population (1994-2019)**
+   - Provides annual population figures for Scotland.
+   - Used to correlate cancer mortality rates with population changes over the years.
 
-### Key Findings
-- Significant trends in cancer mortality rates over the 25-year period.
-- High mortality rates for specific cancer types such as lung, colorectal, and breast cancer.
-- Correlation between population demographics and cancer mortality rates.
+#### Key Components:
+1. **Data Analysis:**
+   - Cleaning and preprocessing of raw data.
+   - Statistical analysis to identify trends and significant changes in cancer mortality rates.
 
-### Tools and Methods
-- **Data Cleaning and Preparation**: Ensured data quality and consistency for accurate analysis.
-- **Statistical Analysis**: Employed statistical techniques to identify significant trends and patterns.
-- **Visualization**: Used tools such as Matplotlib and Seaborn to create informative visualizations.
-- **Modeling**: Applied regression models to predict future cancer mortality rates based on historical data.
+2. **Visualization:**
+   - Creation of various charts and graphs to visually represent cancer mortality trends.
+   - Comparison of cancer mortality data with population data to provide a clearer context.
 
-### Conclusion
-This project provides valuable insights into cancer mortality trends in Scotland over a 25-year period. The findings can help inform public health policies and resource allocation to address cancer more effectively.
+3. **Modeling:**
+   - Development of predictive models to forecast future cancer mortality rates based on historical data.
+   - Analysis of factors contributing to changes in cancer mortality rates.
 
-### How to Use This Repository
-1. **Data**: The `data` folder contains the cancer mortality and population datasets.
-2. **Scripts**: The `scripts` folder includes Python scripts for data analysis, visualization, and modeling.
-3. **Results**: The `results` folder contains the visualizations and models generated during the project.
-4. **README**: This README file provides an overview of the project and instructions for using the repository.
+4. **Exploration:**
+   - In-depth exploration of data to uncover hidden patterns and insights.
+   - Interactive visualizations for better understanding and communication of findings.
 
-### Future Work
-- Extend the analysis to include additional factors such as socioeconomic status and lifestyle habits.
-- Apply machine learning techniques to enhance prediction models.
-- Collaborate with public health officials to use the findings for developing targeted interventions.
+5. **Full Report:**
+   - A comprehensive PDF report detailing the methodology, analysis, results, and conclusions.
+   - Includes all visualizations and modeling results, with explanations and interpretations.
+
+#### Files Included:
+- `scotland_cancer_mortality_1994_2019.csv`: Dataset containing cancer mortality records.
+- `scotland_population_1994_2019.csv`: Dataset containing population figures.
+- `Reporting.xlsx`: data analysis, visualization, and modeling.
+- `full_report.pdf`: Detailed report summarizing the entire project, including findings and visualizations.
+
+#### How to Use:
+1. **Data Preparation:**
+   - Ensure all datasets are in the same directory as the analysis code.
+   - Load the datasets into your preferred data analysis tool (e.g., Jupyter Notebook, RStudio).
+
+2. **Running the Analysis:**
+   - Open `analysis_code.ipynb` in Jupyter Notebook.
+   - Execute the cells to perform data analysis, create visualizations, and build models.
+
+3. **Reviewing the Report:**
+   - Open `full_report.pdf` to read the comprehensive analysis and findings of the project.
+
+#### Conclusion:
+This project provides a detailed examination of cancer mortality trends in Scotland over 25 years, alongside population data. The findings and visualizations offer valuable insights for researchers, policymakers, and healthcare professionals aiming to understand and address cancer mortality.
