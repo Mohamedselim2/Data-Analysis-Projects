@@ -49,15 +49,15 @@ The dataset contains the following columns:
 
 
 ## Visualizations
-![Dashboard](dashboard.png)
+![Dashboard](Dashboard.png)
 
 ## Conclusion
 By understanding the factors that contribute to customer churn, the telecom company can implement strategies to enhance customer satisfaction and retention.
 
 ## Files
-- [dashboard.pbix](dashboard.pbix)
+- [dashboard.pbix](Dashboard.pbix)
 - [Dashboard Theme.json](Dashboard%20Dark%20theme.json)
-- [dashboard.png](dashboard.png)
+- [dashboard.png](Dashboard.png)
 - [report.pdf](report.pdf)
-- [reporting.xlsx](reporting.xlsx)
-- [dataset.xlsx](dataset.xlsx)
+- [reporting.xlsx](Reporting.xlsx)
+- [dataset.xlsx](Telecom%20Churn%20out%20Dataset.xlsx)
