@@ -1,0 +1,34 @@
+Actual Aspen Sales = CALCULATE(
+    SUM(Tabular_Actual[Sales]),
+    Tabular_Actual[Product] = "Aspen"
+)
+
+Actual Carlota Sales = CALCULATE(
+    SUM(Tabular_Actual[Total_Sales]),
+    Tabular_Actual[Product] = "Carlota"
+)
+
+Actual Quad Sales = CALCULATE(
+    SUM(Tabular_Actual[Total_Sales]),
+    Tabular_Actual[Product] = "Quad"
+)
+
+Budget Aspen = CALCULATE(
+    SUM(Tabular_Budget[Value]),
+    Tabular_Budget[Product] = "Aspen"
+)
+
+Budget Carlota = CALCULATE(
+    SUM(Tabular_Budget[Value]),
+    Tabular_Budget[Product] = "Carlota"
+)
+
+Budget Quad = CALCULATE(
+    SUM(Tabular_Budget[Value]),
+    Tabular_Budget[Product] = "Quad"
+)
+
+Variance = SUM(Tabular_Actual[Total_Sales]) - SUM(Tabular_budget[Value]) 
+
+
+Percentage Variance = ( (SUM(Tabular_Actual[Total_Sales]) - SUM(Tabular_budget[Value])) / SUM(Tabular_Actual[Total_Sales]) ) *100
