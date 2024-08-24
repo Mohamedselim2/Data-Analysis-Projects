@@ -64,12 +64,20 @@ ORDER BY EOMONTH(date), Product;
 
 SELECT * FROM Tabular_Actual
 
+-----------------------------------------------------------------------------------------
+-- #2.4 Create a Calendar Table
+DROP TABLE IF EXISTS Calendar;
 
+CREATE TABLE Calendar (
+    Date DATE
+);
 
+INSERT INTO Calendar (Date)
+SELECT EOMONTH(date) AS Date FROM actual 
+GROUP BY EOMONTH(date)
+ORDER BY EOMONTH(date);
 
-
-
-
+SELECT * FROM Calendar
 
 
 
