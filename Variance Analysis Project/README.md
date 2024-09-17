@@ -34,13 +34,3 @@ This project focuses on analyzing the variance between budgeted and actual sales
 
 ## Conclusion
 The project successfully demonstrates how to perform variance analysis using SQL, from data preparation to creating a BI dashboard. The results help in understanding discrepancies between budgeted and actual performance, aiding in better decision-making.
-
-## Files
-- [Dashboard.pbix](Dashboard.pbix)
-- [Dashboard.png](Dashboard.png)
-- [Report.pdf](Report.pdf)
-- [dataset.xlsx](Dataset.xlsx)
-- [DAX_Queries.txt](DAX_Queries.txt)
-- [SQL_Analysis.sql](SQL_Analysis.sql)
-- [SQL_Data_Preparation.sql](SQL_Data_Preparation.sql)
----

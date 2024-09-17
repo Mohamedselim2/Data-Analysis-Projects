@@ -3,6 +3,9 @@
 ## Project Overview
 This project aims to analyze customer churn data from a telecom company to understand why customers are leaving. By identifying key factors influencing churn, the company can take targeted actions to improve customer retention.
 
+## Visualizations
+![Dashboard](Dashboard.png)
+
 ## Data
 The dataset contains the following columns:
 - Customer ID
@@ -47,16 +50,5 @@ The dataset contains the following columns:
 - **Balancing the Dataset**: The churn data was imbalanced, making it difficult to build accurate predictive models.
 - **Visualizations**: Creating meaningful and clear visualizations that effectively communicated insights required multiple iterations and adjustments.
 
-
-## Visualizations
-![Dashboard](Dashboard.png)
-
 ## Conclusion
 By understanding the factors that contribute to customer churn, the telecom company can implement strategies to enhance customer satisfaction and retention.
-
-## Files
-- [dashboard.pbix](Dashboard.pbix)
-- [Dashboard Theme.json](Dashboard%20Dark%20theme.json)
-- [dashboard.png](Dashboard.png)
-- [report.pdf](report.pdf)
-- [dataset.xlsx](Telecom%20Churn%20out%20Dataset.xlsx)

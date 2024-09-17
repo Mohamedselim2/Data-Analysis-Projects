@@ -1,9 +1,10 @@
-### README
-
 #### Project Title: Scotland Cancer Mortality and Population Analysis (1994-2019)
 
 #### Description:
 This project involves comprehensive data analysis, visualization, and modeling of cancer mortality rates in Scotland from 1994 to 2019. Additionally, it includes an analysis of the population data for Scotland over the same period. The project aims to provide insights into the trends and patterns of cancer mortality and how they relate to population changes.
+
+## Visualizations
+![Dashboard](Dashboard.png)
 
 #### Data Sets:
 1. **Scotland Cancer Mortality (1994-2019)**
