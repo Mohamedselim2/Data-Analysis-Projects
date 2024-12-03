@@ -6,7 +6,7 @@ from Functions import uploadfun, NegativeFun, BlurFun
 
 def create_generation_page(parent):
     OUTPUT_PATH = Path(__file__).parent
-    ASSETS_PATH = OUTPUT_PATH / Path(r"E:\Projects & PS\Data Analysis Projects\Image Generator\assets\frame1")
+    ASSETS_PATH = OUTPUT_PATH / Path(r"E:\Projects & PS\Data Analysis Projects\PyProjects\Image Generator\assets\frame1")
 
     def relative_to_assets(path: str) -> Path:
         return ASSETS_PATH / Path(path)

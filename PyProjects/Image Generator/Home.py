@@ -6,7 +6,7 @@ def show_generation_page(window):
     generator.create_generation_page(window)  # Call the function to create the generation page
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"E:\Projects & PS\Data Analysis Projects\Image Generator\assets\frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"E:\Projects & PS\Data Analysis Projects\PyProjects\Image Generator\assets\frame0")
 
 
 def relative_to_assets(path: str) -> Path:
