@@ -1,12 +1,12 @@
 from tkinter.filedialog import askopenfilename
 from pathlib import Path
 import tkinter as tk
-from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
-from Functions import uploadfun, NegativeFun, BlurFun
+from tkinter import Canvas, Button, PhotoImage
+from Functions import MedianFun, UploadFun, BlurFun, EdgeFun, NegativeFun
 
 def create_generation_page(parent):
     OUTPUT_PATH = Path(__file__).parent
-    ASSETS_PATH = OUTPUT_PATH / Path(r"E:\Projects & PS\Data Analysis Projects\PyProjects\Image Generator\assets\frame1")
+    ASSETS_PATH = OUTPUT_PATH / Path(r"assets\frame1")
 
     def relative_to_assets(path: str) -> Path:
         return ASSETS_PATH / Path(path)
@@ -16,7 +16,7 @@ def create_generation_page(parent):
     uploaded_image_path = {"path": None}  # Use a mutable object to store the value
     # Helper function to store the return value
     def handle_upload(canvas):
-        uploaded_image_path["path"] = uploadfun.upload(canvas)  # Call the function and store its return value
+        uploaded_image_path["path"] = UploadFun.upload(canvas)  # Call the function and store its return value
         print(f"Uploaded file path: {uploaded_image_path['path']}")  # Debug or use the value
 
 
@@ -36,9 +36,9 @@ def create_generation_page(parent):
     canvas.place(x = 0, y = 0)
     canvas.create_rectangle(
         0.0,
-        0.0,
+        15.0,
         4099.0,
-        1080.0,
+        1095.0,
         fill="#161616",
         outline="")
 
@@ -55,22 +55,6 @@ def create_generation_page(parent):
         234.0137455261438,
         532.0000459449166,
         237.0,
-        fill="#FFFFFF",
-        outline="")
-
-    canvas.create_rectangle(
-        877.0,
-        516.0,
-        1041.0,
-        518.0,
-        fill="#FFFFFF",
-        outline="")
-
-    canvas.create_rectangle(
-        877.0,
-        606.0000000521147,
-        1041.000001967952,
-        609.0,
         fill="#FFFFFF",
         outline="")
 
@@ -115,18 +99,35 @@ def create_generation_page(parent):
         height=46.0
     )
 
+
+    button_image_2 = PhotoImage(
+        file=relative_to_assets("button_2.png"))
+    button_2 = Button(
+        image=button_image_2,
+        borderwidth=0,
+        highlightthickness=0,
+        command=lambda: BlurFun.apply_blur(canvas, uploaded_image_path['path']),
+        relief="flat"
+    )
+    button_2.place(
+        x=873.0,
+        y=395.0,
+        width=175.0,
+        height=56.0
+    )
+
     button_image_3 = PhotoImage(
         file=relative_to_assets("button_3.png"))
     button_3 = Button(
         image=button_image_3,
         borderwidth=0,
         highlightthickness=0,
-        command=lambda: BlurFun.apply_blur(canvas, uploaded_image_path['path']),
+        command=lambda: EdgeFun.apply_edge_detection(canvas,  uploaded_image_path['path']),
         relief="flat"
     )
     button_3.place(
         x=873.0,
-        y=450.0,
+        y=531.0,
         width=175.0,
         height=56.0
     )
@@ -137,12 +138,28 @@ def create_generation_page(parent):
         image=button_image_4,
         borderwidth=0,
         highlightthickness=0,
-        command=lambda: NegativeFun.apply_negative(canvas,  uploaded_image_path['path']),
+        command=lambda: MedianFun.apply_negative(canvas,  uploaded_image_path['path']),
         relief="flat"
     )
     button_4.place(
         x=873.0,
-        y=540.0,
+        y=463.0,
+        width=175.0,
+        height=56.0
+    )
+
+    button_image_5 = PhotoImage(
+        file=relative_to_assets("button_5.png"))
+    button_5 = Button(
+        image=button_image_5,
+        borderwidth=0,
+        highlightthickness=0,
+        command=lambda: NegativeFun.apply_negative(canvas,  uploaded_image_path['path']),
+        relief="flat"
+    )
+    button_5.place(
+        x=873.0,
+        y=599.0,
         width=175.0,
         height=56.0
     )

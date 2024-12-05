@@ -1,23 +1,20 @@
 from pathlib import Path
-from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
+from tkinter import Tk, Canvas,  Button, PhotoImage
 import generator
 
 def show_generation_page(window):
     generator.create_generation_page(window)  # Call the function to create the generation page
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"E:\Projects & PS\Data Analysis Projects\PyProjects\Image Generator\assets\frame0")
-
+ASSETS_PATH = OUTPUT_PATH / Path(r"assets\frame0")
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
-
 
 window = Tk()
 window.title("Image Generator")
 window.geometry("1920x1080")
 window.configure(bg = "#0C0B2B")
-
 
 canvas = Canvas(
     window,
