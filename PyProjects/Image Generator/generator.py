@@ -2,7 +2,7 @@ from tkinter.filedialog import askopenfilename
 from pathlib import Path
 import tkinter as tk
 from tkinter import Canvas, Button, PhotoImage
-from Functions import MedianFun, UploadFun, BlurFun, EdgeFun, NegativeFun
+from Functions import Master
 
 def create_generation_page(parent):
     OUTPUT_PATH = Path(__file__).parent
@@ -16,7 +16,7 @@ def create_generation_page(parent):
     uploaded_image_path = {"path": None}  # Use a mutable object to store the value
     # Helper function to store the return value
     def handle_upload(canvas):
-        uploaded_image_path["path"] = UploadFun.upload(canvas)  # Call the function and store its return value
+        uploaded_image_path["path"] = Master.upload(canvas)  # Call the function and store its return value
         print(f"Uploaded file path: {uploaded_image_path['path']}")  # Debug or use the value
 
 
@@ -106,7 +106,7 @@ def create_generation_page(parent):
         image=button_image_2,
         borderwidth=0,
         highlightthickness=0,
-        command=lambda: BlurFun.apply_blur(canvas, uploaded_image_path['path']),
+        command=lambda: Master.apply_blur(canvas, uploaded_image_path['path']),
         relief="flat"
     )
     button_2.place(
@@ -122,7 +122,7 @@ def create_generation_page(parent):
         image=button_image_3,
         borderwidth=0,
         highlightthickness=0,
-        command=lambda: EdgeFun.apply_edge_detection(canvas,  uploaded_image_path['path']),
+        command=lambda: Master.apply_edge_detection(canvas,  uploaded_image_path['path']),
         relief="flat"
     )
     button_3.place(
@@ -138,7 +138,7 @@ def create_generation_page(parent):
         image=button_image_4,
         borderwidth=0,
         highlightthickness=0,
-        command=lambda: MedianFun.apply_negative(canvas,  uploaded_image_path['path']),
+        command=lambda: Master.apply_median(canvas,  uploaded_image_path['path']),
         relief="flat"
     )
     button_4.place(
@@ -154,7 +154,7 @@ def create_generation_page(parent):
         image=button_image_5,
         borderwidth=0,
         highlightthickness=0,
-        command=lambda: NegativeFun.apply_negative(canvas,  uploaded_image_path['path']),
+        command=lambda: Master.apply_negative(canvas,  uploaded_image_path['path']),
         relief="flat"
     )
     button_5.place(

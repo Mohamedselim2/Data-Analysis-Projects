@@ -1,0 +1,5 @@
+# pip install -r requirements.txt 
+opencv-python >= 4.5.3
+tkinter >= 8.6
+Pillow >= 10.1
+pathlib >= 1.0.1

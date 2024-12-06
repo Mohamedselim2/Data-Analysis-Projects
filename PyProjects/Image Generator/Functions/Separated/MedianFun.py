@@ -3,7 +3,7 @@ from PIL import Image, ImageTk  # Make sure Pillow is imported
 from tkinter.filedialog import askopenfilename
 from tkinter import messagebox
 
-def apply_negative(canvas, file_path):
+def apply_median(canvas, file_path):
     # Check if a file was selected
     if not file_path:
         messagebox.showerror("File Error", "No file selected.")  # Show a pop-up error
