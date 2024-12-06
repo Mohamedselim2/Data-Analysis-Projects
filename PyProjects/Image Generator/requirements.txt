@@ -1,5 +1,11 @@
 # pip install -r requirements.txt 
 opencv-python >= 4.5.3
-tkinter >= 8.6
-Pillow >= 10.1
 pathlib >= 1.0.1
+certifi==2021.5.30
+chardet==4.0.0
+idna==2.10
+jinja2==3.0.1
+markupsafe==2.0.1
+Pillow >= 10.1
+requests==2.25.1
+urllib3==1.26.6
