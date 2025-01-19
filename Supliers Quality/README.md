@@ -10,9 +10,9 @@ Key findings include:
 - There are regional differences in downtime and defect quantities.
 
 #### Visualizations
-![Dashboard1](./Dashboard1.png)
-![Dashboard2](./Dashboard2.png)
-![Dashboard3](./Dashboard3.png)
+![Dashboard1](./dashboard1.png)
+![Dashboard2](./dashboard2.png)
+![Dashboard3](./dashboard3.png)
 
 #### Description for Technical Audience
 
