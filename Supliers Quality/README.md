@@ -1,6 +1,6 @@
 # Suppliers chain report 
 
-#### Description for all Audience
+### Description for all Audience
 
 This project focuses on analyzing the quality of suppliers (vendors) and its impact on manufacturing downtime. The goal is to identify the best and worst suppliers and determine which plants are most effective at identifying and rejecting defective materials. By understanding these factors, we aim to minimize production downtime and improve overall efficiency.
 
@@ -9,12 +9,12 @@ Key findings include:
 - Defects classified as "Impact" cause the most downtime.
 - There are regional differences in downtime and defect quantities.
 
-#### Visualizations
+### Visualizations
 ![Dashboard1](./dashboard1.png)
 ![Dashboard2](./dashboard2.png)
 ![Dashboard3](./dashboard3.png)
 
-#### Description for Technical Audience
+### Description for Technical Audience
 
 This project involves a comprehensive analysis of supplier quality and its effect on manufacturing downtime. The dataset includes information on defects, vendors, plants, and materials. The analysis involves several technical steps:
 
